@@ -4,14 +4,14 @@ import Button from "react-bootstrap/Button";
 
 
 const AircraftCard = ({ img, name, characteristics }) => {
-//   console.log(name);
+
   return (
-    <Col>
+    <Col xs={12} sm={8} md={6}>
       <Card >
         <Card.Img variant="top" src={img} />
-        <Card.Body>
+        <Card.Body className="m-auto text-center">
           <Card.Title>{name}</Card.Title>
-          <Button variant="primary">Characteristics</Button>
+          <Button  variant="primary">Characteristics</Button>
         </Card.Body>
       </Card>
     </Col>
