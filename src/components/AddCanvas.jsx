@@ -9,7 +9,13 @@ console.log(characteristics);
           <Offcanvas.Title>{name}</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          {/* {characteristics} */}
+        <ul>
+            {Object.entries(characteristics).map(([key, value]) => (
+              <li key={key}>
+                <strong>{key}:</strong> {value}
+              </li>
+            ))}
+          </ul>
         </Offcanvas.Body>
       </Offcanvas>
     </>
