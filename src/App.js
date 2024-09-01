@@ -1,9 +1,10 @@
+import AircraftContainer from "./components/AircraftContainer";
 
 
 function App() {
   return (
     <div>
-      Hello React
+      <AircraftContainer/>
     </div>
   );
 }
