@@ -7,7 +7,7 @@ const AircraftContainer = () => {
 //   console.log(data);
   return (
     <Container>
-      <Row>
+      <Row className=" g-5">
         {data.map((ship) => (
           <AircraftCard key={ship.id} {...ship}/>
         ))}
