@@ -23,6 +23,7 @@ const AircraftCard = ({ img, name, characteristics }) => {
           onHide={handleClose}
           name={name}
           characteristics={characteristics}
+          img={img}
         />
       )}
     </Col>

@@ -1,7 +1,7 @@
 import Offcanvas from "react-bootstrap/Offcanvas";
 
-function AddCanvas({ show, onHide, characteristics,name }) {
-console.log(characteristics);
+function AddCanvas({ show, onHide, characteristics, name, img }) {
+  console.log(characteristics);
   return (
     <>
       <Offcanvas show={show} onHide={onHide}>
@@ -9,9 +9,10 @@ console.log(characteristics);
           <Offcanvas.Title>{name}</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-        <ul>
+          <img src={img} alt="" />
+          <ul className="my-5">
             {Object.entries(characteristics).map(([key, value]) => (
-              <li key={key}>
+              <li className="list-unstyled" key={key}>
                 <strong>{key}:</strong> {value}
               </li>
             ))}
